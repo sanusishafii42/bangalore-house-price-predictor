@@ -3,7 +3,7 @@ services:
     name: home-price-predictor
     env: python
     buildCommand: ""
-    startCommand: "python server/server.py"
+    startCommand: "gunicorn server.server:app"
     envVars:
       - key: FLASK_ENV
         value: production
