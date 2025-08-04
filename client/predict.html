@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Price Predictor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header class="hero mini-hero">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">Home</a>
+                <a href="predict.html" class="nav-link">Predict</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+        <div class="mini-hero-content">
+            <h1>Predict Your Home Price</h1>
+            <p>Enter your property details below for an instant, AI-powered price estimate.</p>
+        </div>
+    </header>
+    <div class="container">
+        <form id="predictForm">
+            <label for="location">Location</label>
+            <select id="location" required>
+                <option value="">Loading...</option>
+            </select>
+            <label for="sqft">Total Sqft</label>
+            <input type="number" id="sqft" min="300" required>
+            <label for="size">Bedrooms</label>
+            <input type="number" id="size" min="1" required>
+            <label for="bath">Bathrooms</label>
+            <input type="number" id="bath" min="1" required>
+            <button type="submit">Predict Price</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <span>&copy; 2025 Bangalore House Price Predictor</span>
+        </div>
+    </footer>
+    <script src="static/js.js"></script>
+</body>
+</html>

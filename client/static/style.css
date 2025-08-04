@@ -1,0 +1,479 @@
+/* Reset & Fonts */
+body, h1, h2, h3, p, ul, ol, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #f76b1c 0%, #fda085 100%);
+    padding: 0.7rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    justify-content: flex-start;
+}
+.nav-link, .nav-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 0.4rem 1.2rem;
+    border-radius: 6px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-link:hover, .nav-logo:hover {
+    background: rgba(255,255,255,0.18);
+    color: #f76b1c;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    padding-bottom: 40px;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+}
+.hero-content {
+    max-width: 700px;
+    margin: 60px auto 0 auto;
+    text-align: center;
+    padding: 32px 16px 0 16px;
+}
+.hero h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2.8rem;
+    color: #f76b1c;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #444;
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+.button {
+    display: inline-block;
+    padding: 13px 32px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(247,107,28,0.08);
+    border: none;
+}
+.button.primary {
+    background: #f76b1c;
+    color: #fff;
+}
+.button.primary:hover {
+    background: #fda085;
+    color: #fff;
+}
+.button.secondary {
+    background: #fff;
+    color: #f76b1c;
+    border: 2px solid #f76b1c;
+}
+.button.secondary:hover {
+    background: #f76b1c;
+    color: #fff;
+}
+
+/* Features Section */
+.features {
+    max-width: 1100px;
+    margin: 48px auto 0 auto;
+    padding: 0 16px;
+    text-align: center;
+}
+.features h2 {
+    color: #f76b1c;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+.feature-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 32px 24px 24px 24px;
+    max-width: 320px;
+    flex: 1 1 260px;
+    text-align: center;
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(247,107,28,0.13);
+}
+.feature-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 18px;
+}
+.feature-card h3 {
+    color: #f76b1c;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.feature-card p {
+    color: #444;
+    font-size: 1rem;
+}
+
+/* How it works */
+.how-it-works {
+    max-width: 700px;
+    margin: 56px auto 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+    text-align: center;
+}
+.how-it-works h2 {
+    color: #f76b1c;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.how-it-works ol {
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 1.08rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #f76b1c 0%, #fda085 100%);
+    color: #fff;
+    padding: 18px 0;
+    margin-top: 56px;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
+}
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .features-grid {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .nav-container {
+        gap: 1.2rem;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    .container, .how-it-works, .features {
+        padding: 18px 6px;
+    }
+    .hero-content {
+        padding: 24px 6px 0 6px;
+    }
+    .features-grid {
+        gap: 16px;
+    }
+    .feature-card {
+        padding: 20px 10px 16px 10px;
+    }
+    .footer {
+        font-size: 0.95rem;
+    }
+}
+
+/* Existing form and result styles remain unchanged */
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    padding: 32px 24px;
+}
+h2 {
+    text-align: center;
+    color: #f76b1c;
+    margin-bottom: 24px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #f76b1c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #fda085;
+}
+.result {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2d7f2d;
+    font-weight: bold;
+}
+
+/* About Me (Contact Page) */
+.about-me {
+    margin-top: 32px;
+    text-align: center;
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid #f76b1c;
+}
+.about-me h3 {
+    margin: 0 0 8px 0;
+    color: #f76b1c;
+}
+.about-me p {
+    color: #444;
+    font-size: 1rem;
+}
+
+
+
+/* Mini Hero for subpages */
+.mini-hero {
+    padding-bottom: 0;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+.mini-hero-content {
+    max-width: 600px;
+    margin: 32px auto 0 auto;
+    text-align: center;
+    padding: 18px 12px 0 12px;
+}
+.mini-hero-content h1 {
+    font-size: 2rem;
+    color: #f76b1c;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin-bottom: 8px;
+}
+.mini-hero-content p {
+    color: #444;
+    font-size: 1.08rem;
+    margin-bottom: 0;
+}
+
+/* Trust Section */
+.trust {
+    max-width: 1100px;
+    margin: 48px auto 0 auto;
+    padding: 0 16px;
+    text-align: center;
+}
+.trust h2 {
+    color: #f76b1c;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+.trust-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.trust-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    padding: 24px 18px;
+    max-width: 260px;
+    flex: 1 1 180px;
+    text-align: center;
+}
+.trust-icon {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+.trust-card h4 {
+    color: #f76b1c;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.trust-card p {
+    color: #444;
+    font-size: 0.98rem;
+}
+
+/* Testimonials */
+.testimonials {
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    padding: 0 16px;
+    text-align: center;
+}
+.testimonials h2 {
+    color: #f76b1c;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.testimonial-grid {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.testimonial-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    padding: 18px 16px;
+    max-width: 320px;
+    flex: 1 1 180px;
+    margin-bottom: 12px;
+}
+.testimonial-card p {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 8px;
+}
+.testimonial-card span {
+    color: #f76b1c;
+    font-size: 0.98rem;
+}
+
+/* Contact List */
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.08rem;
+    padding: 12px 28px;
+    border-radius: 8px;
+    background: #f76b1c;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.contact-btn:hover {
+    background: #fda085;
+    color: #fff;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 900px) {
+    .features-grid, .trust-grid, .testimonial-grid {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    .container, .how-it-works, .features, .trust, .testimonials {
+        padding: 14px 4px;
+    }
+    .hero-content, .mini-hero-content {
+        padding: 14px 4px 0 4px;
+    }
+    .features-grid, .trust-grid, .testimonial-grid {
+        flex-direction: column;
+        align-items: center; /* Add this line */
+        gap: 16px;
+    }
+    .feature-card, .trust-card, .testimonial-card {
+        padding: 14px 6px 10px 6px;
+        width: 100%;           /* Add this line */
+        max-width: 370px;      /* Add this line for a nice look */
+        margin: 0 auto;        /* Add this line to center */
+    }
+    .footer {
+        font-size: 0.95rem;
+    }
+}

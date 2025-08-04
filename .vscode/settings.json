@@ -1,0 +1,4 @@
+{
+    "python.analysis.typeCheckingMode": "off",
+    "livePreview.defaultPreviewPath": "/client/index.html"
+}
