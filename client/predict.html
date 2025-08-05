@@ -27,11 +27,11 @@
                 <option value="">Loading...</option>
             </select>
             <label for="sqft">Total Sqft</label>
-            <input type="number" id="sqft" min="300" required>
+            <input type="number" id="sqft" min="500" required>
             <label for="size">Bedrooms</label>
-            <input type="number" id="size" min="1" required>
+            <input type="number" id="size" min="1" max="7" required>
             <label for="bath">Bathrooms</label>
-            <input type="number" id="bath" min="1" required>
+            <input type="number" id="bath" min="1" max="7" required>
             <button type="submit">Predict Price</button>
         </form>
         <div class="result" id="result"></div>
