@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, send_from_directory  # Import Flask and helpers
-import util                                                    # Import your utility functions
+from server import util                                                    # Import your utility functions
 import os                                                      # For file path operations
 
 app = Flask(__name__, static_folder='../client/static', template_folder='../client')
